@@ -1,0 +1,39 @@
+{% extends "main/base.html" %}
+
+{% block title %}Bilim{% endblock title %}
+
+{% block head %}{% endblock head %}
+
+{% block body %}
+        <main class="ans-question main-others">
+      <div class="container">
+        <h1 class="ans-question__title">Вопрос-ответ</h1>
+        <div class="question-cards">
+          <div class="question-card">
+            <div class="question">
+        {% for el in otzivs %}
+          <div class="question-card">
+            <div class="question">
+              <div class="question-card__top">
+                <h1 class="question-card__title">{{ el.title }}</h1>
+                <p class="date">{{ el.datab }}</p>
+              </div>
+              <p class="question-card__text">
+                {{ el.task }}
+              </p>
+            </div>
+            <div class="answer">
+              <div class="question-card__top">
+                <h1 class="question-card__title">Ответ</h1>
+                <p class="date">{{ el.datab }}</p>
+              </div>
+              <p>{{ el.otvet }}
+              </p>
+            </div>
+          </div>
+              {% endfor %}
+            </div></div></div>
+
+      </div>
+    </main>
+{% endblock body %}

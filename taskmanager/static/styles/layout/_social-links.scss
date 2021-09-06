@@ -1,0 +1,16 @@
+.social-links {
+  display: none;
+  width: 12%;
+
+  &__item {
+    @include flex(center, center);
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-links {
+    @include flex(space-between, center);
+  }
+}

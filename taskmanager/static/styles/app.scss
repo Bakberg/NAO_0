@@ -1,0 +1,31 @@
+@import "./fonts";
+@import "./base/global";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+@import "./base/resets";
+@import "./components/helper";
+@import "./components/background";
+
+@import "./layout/container";
+
+// Header styles
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/social-links";
+
+// Main styles
+@import "./layout/main";
+@import "./layout/hero";
+@import "./layout/history";
+@import "./layout/news";
+@import "./components/ornament";
+@import "./components/divider";
+@import "./layout/form";
+
+// Footer styles
+@import "./layout/footer";
+
+@import "./pages/news";
+@import "./pages/article";
+@import "./pages/ans-question";
+@import "./pages/pdf";

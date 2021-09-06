@@ -1,0 +1,19 @@
+.credits {
+  margin: 10rem 0;
+  background-color: black;
+  color: white;
+
+  &__container {
+    @include flex(space-between, center, column);
+
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .credits {
+    &__container {
+      @include flex(space-between, center);
+    }
+  }
+}

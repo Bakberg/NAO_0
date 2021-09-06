@@ -1,0 +1,38 @@
+.helper {
+  @include flex(space-between, center);
+  position: fixed;
+  right: 12rem;
+  bottom: 4rem;
+  z-index: 5;
+
+
+  &__text-wrapper {
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: $primary;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+
+    &::before {
+      @include box(1rem, 1rem);
+      content: "";
+      position: absolute;
+      top: 0.45rem;
+      right: -1rem;
+      border: 10px solid black;
+      border-left-color: $primary;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-left-color: $primary;
+    }
+  }
+
+  &__button {
+    @include flex(center, center);
+    @include box(56px, 56px);
+    background-color: $primary;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,46 @@
+.ans-question {
+  &__title {
+    padding: 2rem 0;
+    color: $primary;
+    text-shadow: 5px 5px 16px rgba(0, 0, 0, 0.25);
+    font-family: "Gotham-Black";
+  }
+}
+
+.question-cards {
+  margin-bottom: 8rem;
+}
+
+.question-card {
+  margin-bottom: 2rem;
+  background-color: $secondary;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  &__top {
+    @include flex(space-between, center);
+  }
+
+  &__title {
+    font-family: "Gotham-Medium";
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__text {
+    font-weight: 200;
+  }
+}
+
+.question {
+  padding: 1rem;
+}
+
+.answer {
+  padding: 1rem;
+  padding-bottom: 2rem;
+
+  background-color: #a8c9fc;
+}

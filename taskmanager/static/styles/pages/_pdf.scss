@@ -1,0 +1,70 @@
+.pdf-materials {
+  &__header {
+    padding-top: 2rem;
+    text-shadow: 5px 5px 16px rgba(0, 0, 0, 0.25);
+    font-family: "Gotham-Black";
+    color: $primary;
+  }
+}
+
+.material-card {
+  margin-top: 3rem;
+  background-color: $secondary;
+  border-radius: 1rem;
+  padding: 12px 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  &__header {
+    font-family: "Gotham-Medium";
+    font-size: 2rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  &__bottom {
+    @include flex(space-between, center);
+  }
+
+  &__date {
+    font-size: 14px;
+  }
+
+  &__buttons {
+    @include flex(space-between, center);
+  }
+
+  &__read-button {
+    padding: 0.25rem 1rem;
+    font-size: 16px;
+    color: white;
+    background: $primary;
+    border-radius: 1rem;
+    border: none;
+    margin-right: 1rem;
+    background-image: url("../assets/images/small-wave.png");
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  &__download-button {
+    @extend .material-card__read-button;
+    margin-right: 0;
+    @include flex(space-between, center);
+
+    & svg {
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .material-card {
+    &__read-button {
+      padding: 0.5rem 1.5rem;
+    }
+  }
+}

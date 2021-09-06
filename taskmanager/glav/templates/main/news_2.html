@@ -1,0 +1,95 @@
+{% extends "main/base.html" %}
+
+{% block title %}Bilim{% endblock title %}
+
+{% block head %}{% endblock head %}
+
+{% block body %}
+        <main class="main-others">
+      <div class="container">
+        <article class="article-page">
+          <div class="article-page__top-container">
+            <a href="./news.html" class="article-page__back-link">
+              <p>Вернуться к новостям</p>
+            </a>
+            <p>30.07.2021</p>
+          </div>
+          <h1 class="article-page__title">Заголовок, некоторый текст и т.д.</h1>
+          <img
+            class="article-page__image"
+            src="../assets/images/news-image.png"
+            alt="news-image"
+          />
+          <p class="article-page__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consequuntur ex ipsam ipsum nobis perspiciatis quibusdam sit
+            tenetur! Deserunt hic incidunt provident sint ut vitae. Aliquid
+            consequuntur debitis doloribus, eaque eveniet libero maiores saepe?
+            Alias aliquid amet aspernatur at consequuntur doloremque esse
+            expedita facilis id impedit magni, minus nostrum officiis, quam
+            quidem rem repudiandae? Atque consequatur consequuntur eos expedita
+            explicabo, ipsum laudantium omnis provident repudiandae rerum.
+            Debitis eligendi explicabo ipsum iure laborum, maiores minus
+            molestiae, nihil non quam recusandae repudiandae rerum vel. Ex ipsa
+            ipsam nobis numquam odio officia quidem sit. Accusamus alias
+            corporis delectus eum explicabo facere illum impedit, ipsa
+            laudantium necessitatibus nemo non nulla officia omnis, quae quam
+            quia repellat tenetur vel voluptatibus. At beatae corporis
+            distinctio eaque expedita incidunt iusto laudantium nam nostrum,
+            quod reprehenderit sunt ut voluptas? Ad consequuntur dignissimos
+            eligendi excepturi facere hic magnam molestias odit quae veritatis.
+            A ab, facilis odit placeat praesentium quam voluptatibus.
+          </p>
+          <div class="share">
+            <p>Поделиться:</p>
+            <div class="article-page__links">
+              <a class="article-page__link" href="#">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 68 68"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.33121 62.0582C7.02278 63.7522 9.03242 65.0953 11.2447 66.0102C13.4569 66.9251 15.8281 67.3939 18.2221 67.3896C20.6165 67.3938 22.9883 66.925 25.2011 66.0101C27.4139 65.0952 29.4242 63.7522 31.1166 62.0582L41.4292 51.7419L36.2729 46.5856L25.9602 56.9019C23.9052 58.9477 21.1236 60.0962 18.2239 60.0962C15.3242 60.0962 12.5425 58.9477 10.4875 56.9019C8.43997 54.8479 7.2902 52.0659 7.2902 49.1656C7.2902 46.2653 8.43997 43.4833 10.4875 41.4292L20.8039 31.1166L15.6475 25.9602L5.33121 36.2729C1.91725 39.6951 0 44.3317 0 49.1656C0 53.9995 1.91725 58.636 5.33121 62.0582ZM62.0583 31.1166C65.4704 27.6934 67.3865 23.0572 67.3865 18.2239C67.3865 13.3906 65.4704 8.75436 62.0583 5.3312C58.636 1.91725 53.9995 0 49.1656 0C44.3317 0 39.6951 1.91725 36.2729 5.3312L25.9602 15.6475L31.1166 20.8039L41.4292 10.4875C43.4842 8.44175 46.2659 7.2932 49.1656 7.2932C52.0653 7.2932 54.8469 8.44175 56.9019 10.4875C58.9495 12.5416 60.0993 15.3236 60.0993 18.2239C60.0993 21.1242 58.9495 23.9062 56.9019 25.9602L46.5856 36.2729L51.7419 41.4292L62.0583 31.1166Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M20.8012 51.7456L15.6412 46.5893L46.5902 15.6439L51.7465 20.8039L20.8012 51.7456Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a class="article-page__link" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+              </a>
+              <a class="article-page__link" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+{% endblock body %}

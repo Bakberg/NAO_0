@@ -1,0 +1,125 @@
+.main-others {
+  padding-bottom: 4rem;
+  background-image: url("../assets/images/background-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article-page {
+  background-color: $secondary;
+  padding: 1rem 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  &__top-container {
+    @include flex(space-between, center);
+    padding-top: 0.5rem;
+    font-size: 16px;
+    color: $primary;
+  }
+
+  &__back-link {
+    font-size: 16px;
+    text-decoration: none;
+    color: $primary;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__title {
+    font-family: "Gotham Medium";
+    margin: 1rem 0;
+    font-size: 20px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__text {
+    margin-top: 1rem;
+    font-size: 16px;
+  }
+
+  &__links {
+    margin-top: 0.5rem;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+    margin-right: 1rem;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.share {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .article-page {
+    &__link {
+      & svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .article-page {
+    &__top-container {
+      font-size: 18px;
+    }
+
+    &__back-link {
+      font-size: 18px;
+    }
+    &__title {
+      margin: 1rem 0;
+      font-size: 30px;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__text {
+      margin-top: 1rem;
+      font-size: 20px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .article-page {
+    &__top-container {
+      font-size: 18px;
+    }
+
+    &__back-link {
+      font-size: 18px;
+    }
+    &__title {
+      margin: 1rem 0;
+      font-size: 36px;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__text {
+      margin-top: 1rem;
+      font-size: 20px;
+    }
+  }
+}

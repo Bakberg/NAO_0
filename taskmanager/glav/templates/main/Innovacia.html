@@ -1,0 +1,46 @@
+{% extends "main/base.html" %}
+
+{% block title %}Bilim{% endblock title %}
+
+{% block head %}{% endblock head %}
+
+{% block body %}
+        <main class="pdf-materials main-others">
+      <div class="container">
+        <h1 class="pdf-materials__header">Электронно-методические материалы</h1>
+        {% for el in dropdown_ones %}
+        <div class="material-card">
+          <h1 class="material-card__header">{{ el.title }}</h1>
+          <p class="material-card__text">
+            {{ el.task }}
+          </p>
+          <div class="material-card__bottom">
+            <p class="material-card__date">{{ el.datab }}</p>
+            <div class="material-card__buttons">
+              <a href="{{ el.book.url }}" open="{{ el.book.url }}"><button class="material-card__read-button" type="button">
+                Оқу
+              </button></a>
+              <a href="{{ el.book.url }}" download="{{ el.book.url }}"><button class="material-card__download-button">
+                Скачать
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                  />
+                </svg>
+              </button></a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </main>
+{% endblock body %}
